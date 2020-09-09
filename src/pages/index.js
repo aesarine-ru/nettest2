@@ -1,13 +1,12 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Button, Icon, Input } from "@quarkly/widgets";
-import { MdFace } from "react-icons/md";
+import { Theme, Icon, Button } from "@quarkly/widgets";
+import { MdAndroid } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
+		<Icon category="md" icon={MdAndroid} size="64px" />
 		<Button>
 			Button
 		</Button>
-		<Icon category="md" icon={MdFace} />
-		<Input />
 	</Theme>;
 });
